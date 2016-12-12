@@ -11,6 +11,7 @@ if exists('$TMUX')
 endif
 
 call dein#add('tomasr/molokai')
+call dein#add('mhinz/vim-startify')
 
 " Finish dein
 call dein#end()
