@@ -6,6 +6,10 @@ call dein#begin(expand('~/.nvim/bundle/'))
 call dein#add('Shougo/dein.vim')
 
 " The basics
+if exists('$TMUX')
+  call dein#add('christoomey/vim-tmux-navigator')
+endif
+
 call dein#add('tomasr/molokai')
 
 " Finish dein
