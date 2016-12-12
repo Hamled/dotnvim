@@ -16,8 +16,16 @@ call dein#add('mhinz/vim-startify')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 
+" General utilities
+call dein#add('tpope/vim-surround')
+call dein#add('tpope/vim-repeat')
+call dein#add('tpope/vim-eunuch')
+call dein#add('neomake/neomake')
+
 " Finish dein
 call dein#end()
 
 filetype plugin indent on
 syntax enable
+
+autocmd VimEnter * call dein#call_hook('post_source')
