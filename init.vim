@@ -37,6 +37,11 @@ let g:startify_change_to_vcs_root = 1
 let g:startify_show_sessions = 1
 call EnsureExists(g:startify_session_dir)
 
+" Deoplete-clang config
+let s:libclang_base_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+let g:deoplete#sources#clang#libclang_path = s:libclang_base_path . '/libclang.dylib'
+let g:deoplete#sources#clang#clang_header  = s:libclang_base_path . '/clang'
+
 " Other configs
 let g:deoplete#enable_at_startup = 1
 

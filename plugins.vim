@@ -25,6 +25,9 @@ call dein#add('neomake/neomake')
 " Language utilities
 call dein#add('Shougo/deoplete.nvim')
 
+" Language-specific plugins
+runtime plugins/cpp.vim
+
 " Finish dein
 call dein#end()
 
