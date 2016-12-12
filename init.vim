@@ -35,7 +35,7 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 let g:startify_session_dir = util#get_cache_dir('sessions')
 let g:startify_change_to_vcs_root = 1
 let g:startify_show_sessions = 1
-call EnsureExists(g:startify_session_dir)
+call util#ensure_exists(g:startify_session_dir)
 
 " Deoplete-clang config
 let s:libclang_base_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'

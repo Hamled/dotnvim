@@ -21,14 +21,13 @@ let &backupdir = util#get_cache_dir('backup')
 let &directory = util#get_cache_dir('swap')
 set noswapfile
 
-function! EnsureExists(path)
+function! util#ensure_exists(path)
   if !isdirectory(expand(a:path))
     call mkdir(expand(a:path))
   endif
 endfunction
 
-call EnsureExists(s:cache_dir)
-call EnsureExists(&undodir)
-call EnsureExists(&backupdir)
-call EnsureExists(&directory)
-
+call util#ensure_exists(s:cache_dir)
+call util#ensure_exists(&undodir)
+call util#ensure_exists(&backupdir)
+call util#ensure_exists(&directory)
