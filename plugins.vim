@@ -22,6 +22,9 @@ call dein#add('tpope/vim-repeat')
 call dein#add('tpope/vim-eunuch')
 call dein#add('neomake/neomake')
 
+" Language utilities
+call dein#add('Shougo/deoplete.nvim')
+
 " Finish dein
 call dein#end()
 

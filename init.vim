@@ -30,6 +30,8 @@ let g:startify_show_sessions = 1
 call EnsureExists(g:startify_session_dir)
 
 " Other configs
+let g:deoplete#enable_at_startup = 1
+
 autocmd BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") |
   \  exe 'normal! g`"zvzz' |
