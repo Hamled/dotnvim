@@ -5,6 +5,9 @@ set runtimepath+=~/.config/nvim/bundle/repos/github.com/Shougo/dein.vim
 call dein#begin(expand('~/.nvim/bundle/'))
 call dein#add('Shougo/dein.vim')
 
+" The basics
+call dein#add('tomasr/molokai')
+
 " Finish dein
 call dein#end()
 
