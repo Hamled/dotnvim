@@ -7,6 +7,14 @@ runtime mappings.vim " Set our mappings after all plugins
 """ Plugin & other configuration """
 colorscheme molokai
 
+" Filetype configs
+autocmd FileType css,scss setlocal foldmethod=marker foldmarker={,}
+autocmd FileType css,scss nnoremap <silent> <leader>S vi{:sort<CR>
+autocmd FileType python setlocal foldmethod=indent
+autocmd FileType python nnoremap <Leader>8 :PyLint<CR>
+autocmd FileType markdown setlocal nolist
+autocmd FileType vim setlocal fdm=indent keywordprg=:help
+
 " Airline config
 let g:airline_theme='molokai'
 let g:airline#extensions#tabline#enabled = 1
