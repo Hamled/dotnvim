@@ -51,3 +51,8 @@ autocmd BufReadPost *
   \ if line("'\"") > 0 && line("'\"") <= line("$") |
   \  exe 'normal! g`"zvzz' |
   \ endif
+
+" If we have local configuration, use it
+if filereadable($VIMRUNTIME . "/local.vim")
+  runtime local.vim
+endif
