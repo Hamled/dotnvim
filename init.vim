@@ -8,14 +8,10 @@ runtime mappings.vim " Set our mappings after all plugins
 colorscheme molokai
 
 " Filetype configs
-autocmd FileType css,scss setlocal foldmethod=marker foldmarker={,}
-autocmd FileType css,scss nnoremap <silent> <leader>S vi{:sort<CR>
-autocmd FileType python setlocal foldmethod=indent
-autocmd FileType python nnoremap <Leader>8 :PyLint<CR>
-autocmd BufNewFile,BufRead *.bfg setlocal filetype=python
-autocmd FileType markdown setlocal nolist
-autocmd FileType vim setlocal fdm=indent keywordprg=:help
-autocmd FileType crontab setlocal backupcopy=yes " necessary for crontab -e to work
+runtime ft.vim
+runtime ft/python.vim
+runtime ft/css.vim
+runtime ft/typescript.vim
 
 " Airline config
 let g:airline_theme='molokai'
