@@ -42,11 +42,6 @@ call util#ensure_exists(g:startify_session_dir)
 " Other configs
 let g:deoplete#enable_at_startup = 1
 
-autocmd BufReadPost *
-  \ if line("'\"") > 0 && line("'\"") <= line("$") |
-  \  exe 'normal! g`"zvzz' |
-  \ endif
-
 " If we have local configuration, use it
 if !empty(filter(split(&rtp, ','), 'filereadable(v:val . "/local.vim")'))
   runtime local.vim
