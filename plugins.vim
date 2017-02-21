@@ -29,6 +29,7 @@ call dein#add('Shougo/deoplete.nvim')
 " Language-specific plugins
 runtime plugins/cpp.vim
 runtime plugins/typescript.vim
+runtime plugins/rust.vim
 
 " Finish dein
 call dein#end()
