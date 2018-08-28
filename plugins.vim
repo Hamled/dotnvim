@@ -33,6 +33,7 @@ runtime plugins/cpp.vim
 runtime plugins/typescript.vim
 runtime plugins/rust.vim
 runtime plugins/crystal.vim
+runtime plugins/htmlcss.vim
 
 " Finish dein
 call dein#end()
